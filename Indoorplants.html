@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Affordable Organic Store</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image: url('Images/Back.jpg');
+    }
+
+    header {
+      background: #2e7d32;
+      color: white;
+      padding: 5px;
+      text-align: center;
+      height: 110px;
+    }
+    header img
+    {
+      margin-right: 1500px;
+    }
+    
+    h2 {
+      text-align: center;
+      color: #2e7d32;
+      margin: 20px 0;
+    }
+    h4
+    {
+      margin-left: 1300px;
+      color: white;
+      font-size: 20px;
+      margin-top: -40px;
+    }
+
+    /* SECTION WRAPPERS */
+    section {
+      padding: 20px;
+      margin: 20px auto;
+      max-width: 1000px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 0 8px #ccc;
+    }
+    footer{
+      align-items: center;
+    }
+
+    .category-grid, .products {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card, .product-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #ccc;
+      width: 200px;
+      text-align: center;
+      overflow: hidden;
+      transition: 0.3s;
+    }
+
+    .card:hover, .product-card:hover {
+      transform: scale(1.03);
+    }
+
+    .card img, .product-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .card h3, .product-card h3 {
+      padding: 10px 0;
+      color: #2e7d32;
+    }
+
+    .price {
+      color: green;
+      font-weight: bold;
+    }
+
+    .btn {
+      background: #388e3c;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      margin: 10px 0 15px;
+      display: inline-block;
+    }
+
+    .old-price {
+      text-decoration: line-through;
+      color: gray;
+      font-weight: normal;
+      margin-left: 5px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #2e7d32;
+      color: white;
+      margin-top: 30px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="Micro3.html">
+    <img src="Images/home2re.png" width="100px">
+    </a>
+
+        <h1 style="position: absolute;justify-content: center;align-items: center;top: 10px;left: 500px;">🌿 The Affordable Organic Store</h1>
+
+    
+    <a href="About.html">
+    <h4>ABOUT US</h4>
+    </a>
+  </header>
+  <!-- Categories -->
+  <section>
+    <h2><u>Shop by Category</u></h2>
+    <div class="category-grid">
+      <div class="card">
+        <img src="Images/img4.jpg" alt="Plants" />
+        <h3>Indoor Plants</h3>
+      </div>
+    </div>
+  </section>
+
+  <!-- Product List -->
+  <section>
+    <h2>Indoor Plant Products</h2>
+    <div class="products">
+      <div class="product-card">
+        <img src="Images/Indoorplants.jpg" alt="Bird of paradise" />
+        <h3>Bird of paradise</h3>
+        <div class="price">Rs. 79.00</div>
+        <div class="btn">Add to Cart</div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/Indoorplants2.jpg" alt="Monstera Deliciosa" />
+        <h3>Monstera Deliciosa</h3>
+        <div class="price">Rs. 99.00 <span class="old-price">Rs. 149.00</span></div>
+        <div class="btn">Add to Cart</div>
+      </div>
+
+      <div class="product-card">
+        <img src="Images/Indoorplants3.jpg" alt="Monstera Albo" />
+        <h3>Monstera Albo</h3>
+        <div class="price">Rs. 89.00</div>
+        <div class="btn">Add to Cart</div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Footer -->
+  <footer>
+    © 2025 The Affordable Organic Store. All rights reserved.
+  </footer>
+
+</body>
+</html>
